@@ -1,0 +1,41 @@
+*fanvim.txt*         Fanfou client for Vim       Last Change: December 23, 2010 
+
+Author: Shawjia <sogood5460@gmail.com> 
+        website: http://jiapad.com
+        twitter: http://twitter.com/sogood
+        fanfou: http://fanfou.com/stranger
+
+===============================================================================
+1. Requirement                                            *FanVim-requirements*
+
+    - curl - http://curl.haxx.se/ 
+===============================================================================
+2. Introduction                                         *FanVim-intro* *FanVim*
+
+    FanVim allows you to post your current status to Fanfou from Vim.
+
+    Specail thanks to Po Shan Cheah, FanVim is modified from his TwitVim.
+===============================================================================
+3. Commands                                                   *FanVim-commands*
+
+   :PosttoFanfou                                                *:PosttoFanfou* 
+        This command will prompt you for a message and post it to Fanfou.
+
+   :CPosttoFanfou                                              *:CPosttoFanfou*
+        This command posts the current line in the current buffer to Fanfou.
+
+   :BPosttoFanfou                                              *:BPosttoFanfou*
+        This command posts the contents of the current buffer to Fanfou.
+
+===============================================================================
+4. Changelog                                                 *FanVim-changelog*
+
+    0.1     - First Release, post only
+
+===============================================================================
+5. License                                                     *FanVim-license*
+
+    The MIT License
+
+===============================================================================
+vim:tw=78:ts=4:ft=help
