@@ -19,7 +19,7 @@ let s:char_limit = 140
 
 " For more api, check the site below
 " http://code.google.com/p/fanfou-api/wiki/ApiDocumentation
-let s:ffupdate = 'http://api.fanfou.com/statuses/update.xml?source=vim'
+let s:ffupdate = 'http://api.fanfou.com/statuses/update.xml'
 
 function! s:get_config()
     if exists('g:fanvim_login')
@@ -61,7 +61,7 @@ function! s:post_fanfou(mesg)
 		return -1
 	endif
 	
-	let output = system("curl "." ".s:login.' -d status="'.mesg.'" '.s:ffupdate)
+	let output = system("curl ".s:login.' -d "source=fanvim&status='.mesg.'" '.s:ffupdate)
 	if output !~ 'error'
 		echo 'Post status to Fanfou successfully :)'
 	else
